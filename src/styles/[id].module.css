@@ -1,0 +1,390 @@
+.container {
+  display: flex;
+  justify-content: center;
+
+  gap: 30px; /* Increased gap for better spacing between dropdowns */
+  margin-top: 50px;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 200px; /* Set a fixed width to maintain consistency */
+}
+
+.dropdownButton {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 25px; /* Increased padding for a more prominent button */
+  border: none;
+  border-radius: 8px; /* Slightly rounder button edges */
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%; /* Make the button full width */
+  text-align: left; /* Align text to the left */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.dropdownButton:hover {
+  background-color: #45a049;
+  transform: translateY(-2px); /* Add a subtle lift effect on hover */
+}
+
+.dropdownMenu {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); /* Softer shadow */
+  z-index: 1;
+  min-width: 100%; /* Full width to match the button */
+  border-radius: 8px; /* Round corners for the dropdown */
+  overflow: hidden;
+  max-height: 200px; /* Set a max height for long lists */
+  overflow-y: auto; /* Add scroll for overflow content */
+}
+
+.dropdown:hover .dropdownMenu {
+  display: block;
+}
+
+.dropdownMenu li {
+  padding: 12px 20px; /* More padding for better touch targets */
+  cursor: pointer;
+  list-style-type: none;
+  transition: background-color 0.3s ease;
+}
+
+.dropdownMenu li:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdownMenu li:active {
+  background-color: #e0e0e0;
+}
+
+.timeslotContainer {
+  margin-top: 30px; /* More space above the timeslot container */
+  text-align: center; /* Center the timeslot content */
+}
+
+.title {
+  font-size: 22px; /* Slightly larger font size */
+  margin-bottom: 15px; /* More space between title and timeslot buttons */
+  color: #333;
+  font-weight: bold; /* Make the title bolder */
+}
+
+.timeslots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px; /* Increased gap between timeslot buttons */
+}
+
+.timeslot {
+  padding: 12px 25px; /* Increased padding for better touch targets */
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px; /* Rounder edges for timeslot buttons */
+  cursor: pointer;
+  font-size: 16px; /* Increase font size for readability */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 120px; /* Set a fixed width for uniform button size */
+}
+
+.timeslot:hover {
+  background-color: #45a049;
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.selected {
+  background-color: #ff5722;
+}
+
+.selected:hover {
+  background-color: #e64a19;
+}
+
+.proceedButton {
+  margin-top: 30px;
+  padding: 14px 35px;
+  background-color: #3498db;
+  color: white;
+  font-size: 18px; /* Increase font size for emphasis */
+  border: none;
+  border-radius: 30px; /* More rounded button */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.proceedButton:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px); /* Add hover effect to the button */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* HotelDetails.module.css */
+.hotelDetailsWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hotelDetailsWrapper:hover {
+  transform: translateY(-5px);
+}
+
+.hotelImageContainer {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.hotelImage {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.hotelImage:hover {
+  transform: scale(1.05);
+}
+
+.hotelInfo {
+  text-align: center;
+  color: #333;
+}
+
+.hotelName {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.hotelRating {
+  font-size: 1.2rem;
+  color: #f39c12;
+  margin-bottom: 15px;
+}
+
+.rating {
+  font-weight: bold;
+}
+
+.hotelAddress {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.hotelLocation, .hotelContact {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: #7f8c8d;
+}
+
+.hotelActions {
+  margin-top: 20px;
+}
+
+.bookNowButton {
+  background-color: #1abc9c;
+  color: white;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.bookNowButton:hover {
+  background-color: #16a085;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Media queries */
+
+/* Base Styles (Default for Desktop) */
+/* Your original CSS applies here */
+
+/* Small Screens (Phones) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack dropdowns vertically */
+    gap: 20px; /* Adjust spacing */
+    margin-top: 30px; /* Reduce top margin */
+  }
+
+  .dropdown {
+    width: 100%; /* Make dropdowns take full width */
+  }
+
+  .dropdownButton {
+    font-size: 14px; /* Smaller font for buttons */
+    padding: 10px 15px; /* Adjust padding */
+  }
+
+  .dropdownMenu {
+    max-height: 150px; /* Reduce dropdown height */
+  }
+
+  .timeslots {
+    gap: 10px; /* Reduce spacing between buttons */
+  }
+
+  .timeslot {
+    width: 100%; /* Make timeslot buttons take full width */
+    font-size: 14px; /* Smaller font */
+  }
+
+  .proceedButton {
+    font-size: 16px; /* Slightly smaller font */
+    padding: 12px 20px; /* Adjust padding */
+  }
+
+  .hotelDetailsWrapper {
+    padding: 15px; /* Reduce padding */
+    margin: 10px; /* Adjust margins */
+  }
+
+  .hotelImageContainer {
+    max-width: 100%; /* Allow full width */
+  }
+
+  .hotelName {
+    font-size: 2rem; /* Reduce font size */
+  }
+
+  .bookNowButton {
+    font-size: 1rem; /* Smaller button text */
+    padding: 10px 20px; /* Adjust padding */
+  }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1200px) {
+  .container {
+    flex-wrap: wrap; /* Ensure dropdowns wrap as needed */
+    gap: 25px; /* Adjust spacing */
+  }
+
+  .dropdown {
+    width: 150px; /* Adjust dropdown width for tablets */
+  }
+
+  .dropdownButton {
+    font-size: 15px; /* Adjust button font size */
+    padding: 10px 20px; /* Adjust padding */
+  }
+
+  .timeslot {
+    width: 140px; /* Adjust timeslot button width */
+    font-size: 15px; /* Adjust font size */
+  }
+
+  .proceedButton {
+    font-size: 17px; /* Adjust font size */
+    padding: 13px 30px; /* Adjust padding */
+  }
+
+  .hotelDetailsWrapper {
+    padding: 18px; /* Slightly reduce padding */
+    margin: 15px; /* Adjust margins */
+  }
+
+  .hotelImageContainer {
+    max-width: 80%; /* Reduce image container size */
+  }
+
+  .hotelName {
+    font-size: 2.2rem; /* Adjust font size */
+  }
+
+  .bookNowButton {
+    font-size: 1.1rem; /* Slightly smaller button text */
+    padding: 11px 25px; /* Adjust padding */
+  }
+}
+
+/* Large Desktops */
+@media (min-width: 1200px) {
+  .container {
+    gap: 40px; /* Increase spacing between elements */
+    margin-top: 60px; /* Add more margin */
+  }
+
+  .dropdown {
+    width: 250px; /* Larger dropdown width */
+  }
+
+  .dropdownButton {
+    font-size: 18px; /* Larger font size */
+    padding: 15px 30px; /* Add more padding */
+  }
+
+  .dropdownMenu {
+    max-height: 250px; /* Increase dropdown height */
+  }
+
+  .timeslot {
+    width: 150px; /* Slightly larger buttons */
+    font-size: 18px; /* Larger font size */
+  }
+
+  .proceedButton {
+    font-size: 20px; /* Larger font size */
+    padding: 16px 40px; /* Adjust padding */
+  }
+
+  .hotelDetailsWrapper {
+    padding: 25px; /* Increase padding */
+    margin: 30px; /* Increase margin */
+  }
+
+  .hotelImageContainer {
+    max-width: 70%; /* Larger image container */
+  }
+
+  .hotelName {
+    font-size: 3rem; /* Larger font size */
+  }
+
+  .bookNowButton {
+    font-size: 1.3rem; /* Larger button text */
+    padding: 15px 35px; /* Add more padding */
+  }
+}
