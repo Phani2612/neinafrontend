@@ -1,1 +1,1 @@
-export const SERVER_URL = 'https://neinabackend.vercel.app';
+export const SERVER_URL = 'https://neinabackend.onrender.com';
