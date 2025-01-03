@@ -68,7 +68,7 @@ export default function SignupPage() {
 
      const response = await axios.post(`${SERVER_URL}/user/signup`, Data)
 
-     const {message , redirect_uri} = response.data
+     const {message , redirect_url} = response.data
 
      Swal.fire({
       title: "Success!",
@@ -77,7 +77,7 @@ export default function SignupPage() {
       confirmButtonText: "OK",
     })
 
-    window.location.pathname = '/'
+    window.location.pathname = redirect_url
 
     }
 
